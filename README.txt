@@ -1,0 +1,4 @@
+Para que firefox conecte con el programa escritor, es necesario realizar el paso de añadir, manualmente por primera vez al recibir las carpetas, al registro de windows:
+reg add "HKCU\Software\Mozilla\NativeMessagingHosts\url_logger" /ve /t REG_SZ /d "C:\proyectos\url-logger\host\url_logger.json" /f
+
+El código solo registra las páginas que cargan, a través de onCompleted (se quedan fuera las actualizaciones en webs que no recargan, como las que usan pushState). Así elimino también un poco de datos redundantes en url.txt, pero para registrarlas en un futuro habría que escuchar, además, webNavigation.onHistoryStateUpdated.

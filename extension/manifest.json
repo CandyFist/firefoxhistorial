@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "URL Logger",
+  "version": "1.0",
+  "description": "Registra las URLs visitadas en un archivo de texto.",
+  "permissions": ["webNavigation", "nativeMessaging"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "url-logger@ejemplo.local",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

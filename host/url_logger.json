@@ -1,0 +1,7 @@
+{
+  "name": "url_logger",
+  "description": "Escribe en un txt las URLs que le envía la extensión URL Logger",
+  "path": "C:\\proyectos\\url-logger\\host\\url_logger.bat",
+  "type": "stdio",
+  "allowed_extensions": ["url-logger@ejemplo.local"]
+}
